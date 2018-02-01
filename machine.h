@@ -207,12 +207,6 @@
 #endif
 ********************/
 
-
-#ifndef MAX_INT
-#include <limits.h>
-#define	MAX_INT INT_MAX
-#endif
-
 #define	M_MAX_INT MAX_INT
 #ifdef	M_MAX_INT
 #ifndef MAX_RAND

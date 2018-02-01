@@ -3,6 +3,14 @@
 [![Build Status](https://travis-ci.org/yageek/Meschach.svg?branch=master)](https://travis-ci.org/yageek/Meschach)
 
 To compile : cmake . -DCOMPLEX_OPTION=YES -DSPARSE_OPTION=YES
+
+build file with this static library. need to copy this `libmeschach.a` to the src or export it if frequently used.
+
+```bash
+gcc -o tutorial tutorial.c -l:libmeschach.a -lm
+gcc -o tutadv tutadv.c -l:libmeschach.a -lm -DTHREADSAFE
+gcc -o torture torture.c -l:libmeschach.a -lm
+```
 -------
 
 # PDF Manual available
