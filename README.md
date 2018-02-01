@@ -10,6 +10,7 @@ build file with this static library. need to copy this `libmeschach.a` to the sr
 gcc -o tutorial tutorial.c -l:libmeschach.a -lm
 gcc -o tutadv tutadv.c -l:libmeschach.a -lm -DTHREADSAFE
 gcc -o torture torture.c -l:libmeschach.a -lm
+gcc -o Mtest matrixTest.c -l:libmeschach.a -lm -g -O0 -Wall
 ```
 -------
 
